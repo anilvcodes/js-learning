@@ -120,3 +120,10 @@
 // let beadth = 5;
 
 // console.log( length*beadth );
+
+
+// conditionals 
+ let age=23;
+ if(age>18){
+    console.log("you cam vote ")
+ }
