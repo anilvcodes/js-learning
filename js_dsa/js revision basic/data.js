@@ -123,7 +123,23 @@
 
 
 // conditionals 
- let age=23;
- if(age>18){
-    console.log("you cam vote ")
- }
+//  let age=23;
+//  if(age>18){
+//     console.log("you cam vote ")
+//  }
+//if else if  else 
+
+   let mark=85;
+   if (mark>90){
+      console.log("a")
+   }
+   else if ( mark>60){
+      console.log('b')
+   }
+   else if (mark>40){
+      console.log("c")
+
+   }
+   else {
+      console.log("fail")
+   }
