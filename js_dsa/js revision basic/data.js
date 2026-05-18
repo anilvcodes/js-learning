@@ -209,22 +209,47 @@
 
 //find avg of three
 
-let n1=35;
-let n2=24;
-let n3=80;
-let avg=(n1+n2+n3)/3;
-console.log(avg);
+// let n1=35;
+// let n2=24;
+// let n3=80;
+// let avg=(n1+n2+n3)/3;
+// console.log(avg);
 
 
 // greated in three num find
 
-if(n1>n2 && n1>n3){
-   console.log(" n1 is greater ")
-}
-else if(n2>n1 && n2>n3){
-   console.log("n2 greater ")
+// if(n1>n2 && n1>n3){
+//    console.log(" n1 is greater ")
+// }
+// else if(n2>n1 && n2>n3){
+//    console.log("n2 greater ")
 
-}
-else {
-   console.log("n3 is greater ")
+// }
+// else {
+//    console.log("n3 is greater ")
+// }
+
+//for array 
+
+// let arr=[1,2,4,5,6,7];
+// for( let value of arr){
+//    console.log(value);
+// }
+
+// let obj={
+//    name:"anil",
+//    age:25
+// }
+// for(let objVal in obj){
+//    console.log( objVal ,obj[objVal]);
+// }
+
+let users = [
+   { name: "Anil", age: 25 },
+   { name: "Rahul", age: 30 },
+   { name: "Neha", age: 22 }
+];
+
+for (let user of users) {
+   console.log(user.name, user.age);
 }
