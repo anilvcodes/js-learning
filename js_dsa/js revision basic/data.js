@@ -129,17 +129,53 @@
 //  }
 //if else if  else 
 
-   let mark=85;
-   if (mark>90){
-      console.log("a")
-   }
-   else if ( mark>60){
-      console.log('b')
-   }
-   else if (mark>40){
-      console.log("c")
+   // let mark=85;
+   // if (mark>90){
+   //    console.log("a")
+   // }
+   // else if ( mark>60){
+   //    console.log('b')
+   // }
+   // else if (mark>40){
+   //    console.log("c")
 
-   }
-   else {
-      console.log("fail")
-   }
+   // }
+   // else {
+   //    console.log("fail")
+   // }
+
+
+
+   //ternery opreator
+
+
+   // let age=25;
+   // let result=(age>18)? "you can ride ": "YOU CAN NOT RIDE "
+   // console.log(result);
+
+   // let mark=30 ;
+   // let passingMark=(mark>33)? "you can pass": "fail";
+   // console.log(passingMark);
+
+
+
+   //loop
+// let num=1
+//    for( num ;num<=10;num++){
+//       console.log(num);
+//    }
+
+
+
+//    let rev=100;
+//    for(rev;rev>=1; rev--){
+//       console.log(rev);
+//    }
+
+ for (let i=1 ;i<=5;i++){
+       for(let j=1 ; j<=10 ;j++){
+         console.log( i, j )
+       }
+      
+
+ }
