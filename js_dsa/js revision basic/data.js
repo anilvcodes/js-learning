@@ -199,10 +199,18 @@
    
 // }
 
-let password="Annie@1234";
-if(password==="Annie@122334"){
-   console.log("login");
-  }
-else{
-   console.log("incurrect pass");
-}
+// let password="Annie@1234";
+// if(password==="Annie@122334"){
+//    console.log("login");
+//   }
+// else{
+//    console.log("incurrect pass");
+// }
+
+//find avg of three
+
+let n1=35;
+let n2=24;
+let n3=80;
+let avg=(n1+n2+n3)/3;
+console.log(avg);
