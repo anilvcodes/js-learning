@@ -172,10 +172,37 @@
 //       console.log(rev);
 //    }
 
- for (let i=1 ;i<=5;i++){
-       for(let j=1 ; j<=10 ;j++){
-         console.log( i, j )
-       }
+//  for (let i=1 ;i<=5;i++){
+//        for(let j=1 ; j<=10 ;j++){
+//          console.log( i, j )
+//        }
       
 
- }
+//  }
+
+// finde even odd 
+// let num=13;
+// if(num%2===0){
+//    console.log("even")
+
+// }
+// else{
+//    console.log("odd")
+// }
+
+//prinnt even 1-100
+// let num=1;
+// for (num ;num<=100;num++){
+//    if(num%2===0){
+//       console.log(num)
+//    }
+   
+// }
+
+let password="Annie@1234";
+if(password==="Annie@122334"){
+   console.log("login");
+  }
+else{
+   console.log("incurrect pass");
+}
