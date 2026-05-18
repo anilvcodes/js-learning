@@ -214,3 +214,17 @@ let n2=24;
 let n3=80;
 let avg=(n1+n2+n3)/3;
 console.log(avg);
+
+
+// greated in three num find
+
+if(n1>n2 && n1>n3){
+   console.log(" n1 is greater ")
+}
+else if(n2>n1 && n2>n3){
+   console.log("n2 greater ")
+
+}
+else {
+   console.log("n3 is greater ")
+}
