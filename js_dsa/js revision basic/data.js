@@ -244,12 +244,87 @@
 //    console.log( objVal ,obj[objVal]);
 // }
 
-let users = [
-   { name: "Anil", age: 25 },
-   { name: "Rahul", age: 30 },
-   { name: "Neha", age: 22 }
-];
+// let users = [
+//    { name: "Anil", age: 25 },
+//    { name: "Rahul", age: 30 },
+//    { name: "Neha", age: 22 }
+// ];
 
-for (let user of users) {
-   console.log(user.name, user.age);
+// for (let user of users) {
+//    console.log(user.name, user.age);
+// }
+
+
+
+// 1 to 10 print
+// Sum of 1 to n
+// Multiplication table
+// Even numbers print
+// Reverse counting
+// Medium
+// Factorial
+// Prime number check
+// Fibonacci series
+// Palindrome number
+// Armstrong number
+
+// let num=1;
+// for(num;num<=10;num++){
+//    console.log(num);
+
+// }
+
+// let num=1;
+// let sum=0;
+// for(num;num<=2;num++){
+  
+//   sum=sum+num;
+ 
+// }
+//  console.log(sum);
+
+// let num=1;
+
+// for(num;num<=100;num++){
+//   if(num%2===0){
+//    console.log(num);
+//   }
+ 
+ 
+// }
+
+
+ let num=1;
+let table=5;
+for(num;num<=10;num++){
+  
+let res = num*table
+ console.log(res);
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function
+// Function to add numbers
+// Square function
+// Greeting function
+// Max of 2 numbers
+// Even/odd function
+// Medium
+// Prime checker function
+// Palindrome function
+// Factorial function
+// Celsius converter function
+// Calculator function
