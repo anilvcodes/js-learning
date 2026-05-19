@@ -260,13 +260,7 @@
 // Sum of 1 to n
 // Multiplication table
 // Even numbers print
-// Reverse counting
-// Medium
-// Factorial
-// Prime number check
-// Fibonacci series
-// Palindrome number
-// Armstrong number
+
 
 // let num=1;
 // for(num;num<=10;num++){
@@ -294,17 +288,20 @@
 // }
 
 
- let num=1;
-let table=5;
-for(num;num<=10;num++){
+//  let num=1;
+// let table=5;
+// for(num;num<=10;num++){
   
-let res = num*table
- console.log(res);
-}
+// let res = num*table
+//  console.log(res);
+// }
  
 
 
-
+let num=100;
+for(num; num>=1;num--){
+   console.log(num);
+}
 
 
 
