@@ -325,3 +325,13 @@
 // Factorial function
 // Celsius converter function
 // Calculator function
+
+
+// reusable block of code call function 
+
+function add(a,b) {
+   return a+b;
+
+}
+console.log(add(5,6));
+console.log(add(6,6));
