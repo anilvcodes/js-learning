@@ -298,10 +298,10 @@
  
 
 
-let num=100;
-for(num; num>=1;num--){
-   console.log(num);
-}
+// let num=100;
+// for(num; num>=1;num--){
+//    console.log(num);
+// }
 
 
 
