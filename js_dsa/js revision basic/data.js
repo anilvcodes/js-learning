@@ -356,11 +356,25 @@
 
 // find squar
 
-function squar(a,b){
-   return a**b;
+// function squar(a,b){
+//    return a**b;
 
+// }
+// console.log(squar(8,2));
+// console.log(squar(2, 3)); // 8
+// console.log(squar(5, 2)); // 25
+// console.log(squar(10, 0));
+
+function isPalindrome(value){
+   let str= value.toString();
+    let reversed = str.split('').reverse().join('');
+
+   
 }
-console.log(squar(8,2));
-console.log(squar(2, 3)); // 8
-console.log(squar(5, 2)); // 25
-console.log(squar(10, 0));
+
+console.log(isPalindrome("madam"));
+console.log(isPalindrome(121));
+console.log(isPalindrome("hello"));
+console.log(isPalindrome(123));
+
+
