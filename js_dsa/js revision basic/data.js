@@ -328,10 +328,39 @@
 
 
 // reusable block of code call function 
+ // argument and parameter 
 
-function add(a,b) {
-   return a+b;
+// function add(a,b) {
+//    return a+b;
+
+// }
+// console.log(add(5,6));
+// console.log(add(6,6));
+
+
+// default perameter 
+
+// function greet(greeting="good morning" ,name){
+//    return `${greeting} ,${name }`
+// }
+// console.log(greet("good evening" , "anil"));
+// console.log(greet("good evening" , "annie "));
+// arrow function
+// const greet=(app)=> {
+//    return app;
+// }
+// console.log(greet("myapp"));
+
+// const namsteJs= namste => namste;
+// console.log(namsteJs("learning function in js arrwo function"))
+
+// find squar
+
+function squar(a,b){
+   return a**b;
 
 }
-console.log(add(5,6));
-console.log(add(6,6));
+console.log(squar(8,2));
+console.log(squar(2, 3)); // 8
+console.log(squar(5, 2)); // 25
+console.log(squar(10, 0));
