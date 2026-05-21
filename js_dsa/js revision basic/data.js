@@ -369,7 +369,9 @@ function isPalindrome(value){
    let str= value.toString();
     let reversed = str.split('').reverse().join('');
 
-   
+    return str === reversed
+        ? "Palindrome"
+        : "Not Palindrome";
 }
 
 console.log(isPalindrome("madam"));
