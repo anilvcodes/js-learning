@@ -365,18 +365,18 @@
 // console.log(squar(5, 2)); // 25
 // console.log(squar(10, 0));
 
-function isPalindrome(value){
-   let str= value.toString();
-    let reversed = str.split('').reverse().join('');
+// function isPalindrome(value){
+//    let str= value.toString();
+//     let reversed = str.split('').reverse().join('');
 
-    return str === reversed
-        ? "Palindrome"
-        : "Not Palindrome";
-}
+//     return str === reversed
+//         ? "Palindrome"
+//         : "Not Palindrome";
+// }
 
-console.log(isPalindrome("madam"));
-console.log(isPalindrome(121));
-console.log(isPalindrome("hello"));
-console.log(isPalindrome(123));
+// console.log(isPalindrome("madam"));
+// console.log(isPalindrome(121));
+// console.log(isPalindrome("hello"));
+// console.log(isPalindrome(123));
 
 
