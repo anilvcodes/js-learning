@@ -383,3 +383,5 @@
 let arr=[1,2,3,5,7,9];
 console.log(arr);
 console.log(arr.length);
+arr.push(34);
+console.log(arr);
