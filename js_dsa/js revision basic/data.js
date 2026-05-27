@@ -380,18 +380,10 @@
 // console.log(isPalindrome(123));
 
 //array
-// Easy
 
 
-// Sum of array
-// Reverse array
-// Count even numbers
-// Medium
-// Remove duplicates
-// Second largest number
-// Sort array
-// Merge arrays
-// Frequency count
+
+
 
 // let arr=[1,2,3,5,7,9];
 // console.log(arr);
@@ -405,26 +397,38 @@
 // console.log(arr);
 // arr.unshift(51);
 // console.log(arr);
- let arr=[12,13,14,15,16,17,18,19];
- let max_arr=arr[0]
-//  console.log(arr.length);
- for(let i=0 ; i<arr.length;i++){
-   if(arr[i]>max_arr){
-      max_arr=arr[i];
-   }
+//  let arr=[12,13,14,15,16,17,18,19];
+//  let max_arr=arr[0]
+// //  console.log(arr.length);
+//  for(let i=0 ; i<arr.length;i++){
+//    if(arr[i]>max_arr){
+//       max_arr=arr[i];
+//    }
 
-   // console.log(arr[i]);
- }
- console.log(max_arr);
+//    // console.log(arr[i]);
+//  }
+//  console.log(max_arr);
 
- // find min in array 
+//  // find min in array 
 
- let arr2=[1,2,3,4,5,6,7,8,9];
- let min_arr =arr2[0];
- for(let j=0; j<arr2.length;j++){
-   if(min_arr>arr2[j]){
-      min_arr= arr2[j]
-   }
+//  let arr2=[1,2,3,4,5,6,7,8,9];
+//  let min_arr =arr2[0];
+//  for(let j=0; j<arr2.length;j++){
+//    if(min_arr>arr2[j]){
+//       min_arr= arr2[j]
+//    }
 
- }
-console.log(min_arr);
+//  }
+// console.log(min_arr);
+
+
+
+
+// sum of array 
+let arr=[12,12,13,13]
+console.log(arr.reverse());
+let sum=0;
+for(let i=0;i<arr.length; i++){
+   sum=sum+arr[i];
+}
+console.log(sum);
