@@ -434,6 +434,8 @@
 // console.log(sum);
 
 let arr=[12,12,13,13,24,26,28,18,80]
+let unique_arr=[...new Set(arr)];  //[...new Set(arr)];
+console.log(unique_arr);
 
 let count_even=0;
 for(let i=0;i<arr.length; i++){
