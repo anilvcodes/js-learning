@@ -445,8 +445,13 @@
 // }
 // console.log(count_even);
 
-const arr = [3, 7, 2, 9, 5];
-arr.sort((a ,b)=>b-a);
-console.log(arr[1]);
+// const arr = [3, 7, 2, 9, 5];
+// arr.sort((a ,b)=>b-a);
+// console.log(arr);
 
-console.log(Math.max(...arr));
+// console.log(Math.max(...arr));
+
+let arr=[1,2,3,4];
+let arr2=[1,2,3,4];
+let arr3=[...arr,...arr2]
+console.log(arr3);
