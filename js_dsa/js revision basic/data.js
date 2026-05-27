@@ -425,10 +425,20 @@
 
 
 // sum of array 
-let arr=[12,12,13,13]
-console.log(arr.reverse());
-let sum=0;
+// let arr=[12,12,13,13,24,26,28,18,80]
+// console.log(arr.reverse());
+// let sum=0;
+// for(let i=0;i<arr.length; i++){
+//    sum=sum+arr[i];
+// }
+// console.log(sum);
+
+let arr=[12,12,13,13,24,26,28,18,80]
+
+let count_even=0;
 for(let i=0;i<arr.length; i++){
-   sum=sum+arr[i];
+   if(arr[i]%2===0){
+      count_even++;
+   }
 }
-console.log(sum);
+console.log(count_even);
