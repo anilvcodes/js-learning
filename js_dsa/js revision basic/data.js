@@ -433,14 +433,20 @@
 // }
 // console.log(sum);
 
-let arr=[12,12,13,13,24,26,28,18,80]
-let unique_arr=[...new Set(arr)];  //[...new Set(arr)];
-console.log(unique_arr);
+// let arr=[12,12,13,13,24,26,28,18,80]
+// let unique_arr=[...new Set(arr)];  //[...new Set(arr)];
+// console.log(unique_arr);
 
-let count_even=0;
-for(let i=0;i<arr.length; i++){
-   if(arr[i]%2===0){
-      count_even++;
-   }
-}
-console.log(count_even);
+// let count_even=0;
+// for(let i=0;i<arr.length; i++){
+//    if(arr[i]%2===0){
+//       count_even++;
+//    }
+// }
+// console.log(count_even);
+
+const arr = [3, 7, 2, 9, 5];
+arr.sort((a ,b)=>b-a);
+console.log(arr[1]);
+
+console.log(Math.max(...arr));
