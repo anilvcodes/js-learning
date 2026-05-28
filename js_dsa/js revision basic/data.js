@@ -471,7 +471,14 @@
 // filter() creates a new array containing only elements that match a condition.
 
 
-let arr = [34,45,67,89,87,45,34,10,0];
-let findeven= arr.filter(num=> num%2===0 && num<34 );
-console.log(findeven);
+// let arr = [34,45,67,89,87,45,34,10,0];
+// let findeven= arr.filter(num=> num%2===0 && num<34 );
+// console.log(findeven);
 
+const numbers = [1, 2, 3, 4, 5];
+
+const result = numbers
+    .filter(num => num % 2 === 0)
+    .map(num => num * 2);
+
+console.log(result);
