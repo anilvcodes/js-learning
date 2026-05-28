@@ -475,10 +475,23 @@
 // let findeven= arr.filter(num=> num%2===0 && num<34 );
 // console.log(findeven);
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const result = numbers
-    .filter(num => num % 2 === 0)
-    .map(num => num * 2);
+// const result = numbers
+//     .filter(num => num % 2 === 0)
+//     .map(num => num * 2);
 
-console.log(result);
+// console.log(result);
+
+
+const users = [
+  { name: "Aman", active: true },
+  { name: "Rahul", active: false },
+  { name: "Priya", active: true }
+];
+
+const activeUsers = users
+    .filter(user => user.active)
+    .map(user => user.name);
+
+console.log(activeUsers);
