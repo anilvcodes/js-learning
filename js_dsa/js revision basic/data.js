@@ -461,9 +461,17 @@
 // map 
 // map() creates a new array by transforming each element.
 
- let arr=[1,2,3,4];
-let squaired= arr.map(num => num*2);
-let cube= arr.map(num => num*num*num);
- console.log(squaired);
-  console.log(cube);
-  
+//  let arr=[1,2,3,4];
+// let squaired= arr.map(num => num*2);
+// let cube= arr.map(num => num*num*num);
+//  console.log(squaired);
+//   console.log(cube);
+
+// filter 
+// filter() creates a new array containing only elements that match a condition.
+
+
+let arr = [34,45,67,89,87,45,34,10,0];
+let findeven= arr.filter(num=> num%2===0 && num<34 );
+console.log(findeven);
+
