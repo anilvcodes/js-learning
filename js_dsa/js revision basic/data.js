@@ -451,7 +451,19 @@
 
 // console.log(Math.max(...arr));
 
-let arr=[1,2,3,4];
-let arr2=[1,2,3,4];
-let arr3=[...arr,...arr2]
-console.log(arr3);
+// let arr=[1,2,3,4];
+// let arr2=[1,2,3,4];
+// let arr3=[...arr,...arr2]
+// console.log(arr3);
+
+
+
+// map 
+// map() creates a new array by transforming each element.
+
+ let arr=[1,2,3,4];
+let squaired= arr.map(num => num*2);
+let cube= arr.map(num => num*num*num);
+ console.log(squaired);
+  console.log(cube);
+  
