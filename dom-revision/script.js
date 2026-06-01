@@ -1,59 +1,44 @@
-let globalID = 1; 
-// A global counter to give each todo item a unique ID
-// It starts at 1 and increases by 1 for each new todo
+(function () {
+    const TO_TEXT_FIELD_ID = "todo_textfield";
+    let todos = [];
 
-// Function to mark a todo as done
-function markAsDone(todoID){
-    const parent = document.getElementById(todoID); 
-    // Get the todo div element by its unique ID
+    const textfield = document.createElement("input");
 
-    parent.children[2].innerHTML = "done"; 
-    // Access the 3rd child element (the button in this case)
-    // and change its text to "done"
-}
+    textfield.type = "text";
+    textfield.id = TO_TEXT_FIELD_ID;
+    textfield.placeholder = "enter your todo.";
 
-// Function to create a new todo element with title, description, and a unique ID
-function createchild(title, description, id){
-    const child = document.createElement("div"); 
-    // Main container div for a single todo
+    const button = document.createElement("button");
+    button.innerText = "Add todo";
 
-    const firstgrandChild = document.createElement("div"); 
-    firstgrandChild.innerHTML = title; 
-    // First child div shows the title of the todo
+    button.addEventListener("click", function () {
+        const input = document.getElementById(TO_TEXT_FIELD_ID);
+             if(!input.value){
+                return;
+             }
+        todos = [input.value, ...todos];
+        input.value = " ";
 
-    const secondGrandChild = document.createElement("div"); 
-    secondGrandChild.innerHTML = description; 
-    // Second child div shows the description of the todo
+        renderTodos();
+    });
 
-    const thirdgrandChild = document.createElement("button"); 
-    thirdgrandChild.innerHTML = "mark as done"; 
-    // Button that will allow the user to mark the todo as done
+    function renderTodos() {
+        const parent = document.createElement("div");
 
-    thirdgrandChild.setAttribute("onclick", `markAsDone(${id})`); 
-    // Adds an onclick event to the button that calls markAsDone with this todo's unique ID
+        todos.forEach((todo) => {
+            const element = document.createElement("div");
+            element.innerText = todo;
+            parent.append(element);
+        });
 
-    child.appendChild(firstgrandChild); 
-    child.appendChild(secondGrandChild); 
-    child.appendChild(thirdgrandChild); 
-    // Add title, description, and button to the main todo div
+        addToUI(parent);
+    }
 
-    child.setAttribute("id", id); 
-    // Assign a unique ID to the main todo div
+    addToUI(textfield);
+    addToUI(button);
 
-    return child; 
-    // Return the complete todo element so it can be added to the page
-}
-
-// Function to add a new todo from input fields
-function addtodo(){
-    const title = document.getElementById("title").value; 
-    const description = document.getElementById("description").value; 
-    // Get values typed by the user in the input fields
-
-    const parent = document.getElementById("todos"); 
-    // Get the container div where todos will be added
-
-    parent.appendChild(createchild(title, description, globalID++)); 
-    // Create a new todo element and append it to the container
-    // Increment globalID so the next todo has a unique ID
-}
+    function addToUI(element) {
+        const todo = document.getElementById("todo");
+        todo.append(element);
+    }
+})();
