@@ -21,3 +21,13 @@ arr.unshift(23,45)
    // reduce
    let add= num.reduce((a,b)=> a+b ,0);
    console.log(add);
+
+   
+
+   const marks = [85, 90, 78, 92, 88];
+
+// Find average
+const average =
+  marks.reduce((sum, mark) => sum + mark, 0) / marks.length;
+
+console.log("Average Marks:", average);
