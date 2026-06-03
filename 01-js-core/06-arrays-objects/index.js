@@ -43,3 +43,16 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(total); 
+
+
+
+
+// object   
+let obj ={
+  name:"anil",
+  age:23,
+  profession:"software engineer"
+}
+ console.log(obj);
+
+console.log(obj.name,obj.age,obj.profession);
