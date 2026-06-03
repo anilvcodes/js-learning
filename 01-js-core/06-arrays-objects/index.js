@@ -56,3 +56,13 @@ let obj ={
  console.log(obj);
 
 console.log(obj.name,obj.age,obj.profession);
+
+const student = {
+  name: "Aman",
+  address: {
+    city: "Lucknow",
+    state: "UP"
+  }
+};
+
+console.log(student.address.city);
