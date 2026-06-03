@@ -66,3 +66,21 @@ const student = {
 };
 
 console.log(student.address.city);
+
+
+
+const user = {
+  _id: "u123",
+  name: "Aman",
+  email: "aman@gmail.com",
+  role: "admin",
+  createdAt: "2026-06-03",
+  permissions: ["read", "write", "delete"],
+  profile: {
+    phone: "9876543210",
+    city: "Lucknow"
+  }
+};
+
+console.log(user);
+console.log(user.profile.phone);
