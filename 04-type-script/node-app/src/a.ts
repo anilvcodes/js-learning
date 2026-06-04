@@ -38,3 +38,22 @@ const user: User = {
 };
 console.log(`Name: ${user.name}, Age: ${user.age}`);
 console.log(user);
+
+
+
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  grreet() {
+    console.log(`Hi ${this.name}`);
+  }
+}
+
+const p = new Person("John", 30);
+p.grreet();
