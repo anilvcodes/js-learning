@@ -25,3 +25,16 @@ function age(num:number):boolean{
 }
 let x=age(19);
 console.log(x);
+
+//obj
+interface User {
+  name: string;
+  age: number;
+}
+
+const user: User = {
+  name: "John",
+  age: 30,
+};
+console.log(`Name: ${user.name}, Age: ${user.age}`);
+console.log(user);
