@@ -59,3 +59,36 @@ let product_arr=[
  console.log(totalprice);
  console.log(product_arr[0].p_name);
 
+// this 
+
+
+
+class Student {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+
+//Each object has its own data.
+
+//These are called instance properties.
+const s_1 = new Student("Rahul");
+const s_2 = new Student("anil");
+const s_3 = new Student("annie");
+console.log(s_1.name,s_2.name,s_3.name);
+// instance method
+class StudentAp {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log("Hello " + this.name);
+  }
+}
+const stu = new StudentAp("Rahul");
+stu.greet();
+
+
+//PROTOTYPES
