@@ -16,7 +16,12 @@ function countstr(str4){
 }
 console.log(countstr("hello world"));
  
-function toUpper(str){
-    return str.toUpperCase()
+function toUpper(abc){
+    return abc.toUpperCase()
 }
-console.log("hello ana ")
+console.log(toUpper("hello ana "))
+
+function toLower(xyz){
+    return xyz.toLowerCase()
+}
+console.log(toLower("HELLO NANA "))
