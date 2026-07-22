@@ -39,3 +39,5 @@ console.log(merge)
 }
 
 console.log(getStringLength("JavaScript")); // 10
+
+
