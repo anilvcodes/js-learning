@@ -105,3 +105,20 @@ console.log(count.decrement());
 console.log(count.decrement());
 console.log(count.decrement());
 console.log(count.reset());
+
+
+var map= function (arr,fn){
+  result =[];
+  for (i=0; i<arr.length;i++){
+    result.push(fn(arr[i],i));
+  }
+  return result;
+}
+
+const arr = [1, 2, 3];
+
+function plusfive(n) {
+    return n + 5;
+}
+
+console.log(map(arr, plusfive));
