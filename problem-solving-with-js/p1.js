@@ -44,39 +44,64 @@
 
 // increment 
 
-var createCounter = function(n) {
+// var createCounter = function(n) {
     
-    return function() {
-        return n++;
-    };
+//     return function() {
+//         return n++;
+//     };
+// };
+// const counter = createCounter(5);
+
+// console.log(counter()); // 5
+// console.log(counter()); // 6
+// console.log(counter()); // 7
+
+// //2
+// //to be or  not to be
+// var expect= function(val){
+//   return {
+//   toBe: function(other) {
+//     if(val===other) return true;
+//  throw new Error("Not Equal");
+
+
+//   },
+//   notToBe: function(other) {
+//     if(val!==other) return true;
+//  throw new Error("Equal");
+
+//   }
+// };
+
+// };
+
+// const test = expect(5);
+
+// console.log(test.toBe(5));      
+// console.log(test.notToBe(6));   
+
+var createCounter = function(init) {
+    
+    let current =init;
+    return{
+        increment(){
+        return ++current;
+        },
+        decrement(){
+            return --current;
+
+        },
+        reset(){
+            current =init;
+            return current;
+
+        }
+    }
 };
-const counter = createCounter(5);
 
-console.log(counter()); // 5
-console.log(counter()); // 6
-console.log(counter()); // 7
-
-//2
-//to be or  not to be
-var expect= function(val){
-  return {
-  toBe: function(other) {
-    if(val===other) return true;
- throw new Error("Not Equal");
-
-
-  },
-  notToBe: function(other) {
-    if(val!==other) return true;
- throw new Error("Equal");
-
-  }
-};
-
-};
-
-const test = expect(5);
-
-console.log(test.toBe(5));      
-console.log(test.notToBe(6));   
-
+const count=createCounter(10)
+console.log(count.increment());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.decrement());
+console.log(count.reset());
