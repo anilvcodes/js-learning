@@ -57,3 +57,26 @@ console.log(counter()); // 6
 console.log(counter()); // 7
 
 //2
+//to be or  not to be
+var expect= function(val){
+  return {
+  toBe: function(other) {
+    if(val===other) return true;
+ throw new Error("Not Equal");
+
+
+  },
+  notToBe: function(other) {
+    if(val!==other) return true;
+ throw new Error("Equal");
+
+  }
+};
+
+};
+
+const test = expect(5);
+
+console.log(test.toBe(5));      
+console.log(test.notToBe(6));   
+
