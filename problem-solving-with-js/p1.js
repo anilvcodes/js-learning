@@ -80,45 +80,62 @@
 // console.log(test.toBe(5));      
 // console.log(test.notToBe(6));   
 
-var createCounter = function(init) {
+// var createCounter = function(init) {
     
-    let current =init;
-    return{
-        increment(){
-        return ++current;
-        },
-        decrement(){
-            return --current;
+//     let current =init;
+//     return{
+//         increment(){
+//         return ++current;
+//         },
+//         decrement(){
+//             return --current;
 
-        },
-        reset(){
-            current =init;
-            return current;
+//         },
+//         reset(){
+//             current =init;
+//             return current;
 
+//         }
+//     }
+// };
+
+// const count=createCounter(10)
+// console.log(count.increment());
+// console.log(count.decrement());
+// console.log(count.decrement());
+// console.log(count.decrement());
+// console.log(count.reset());
+
+
+// var map= function (arr,fn){
+//   result =[];
+//   for (i=0; i<arr.length;i++){
+//     result.push(fn(arr[i],i));
+//   }
+//   return result;
+// }
+
+// const arr = [1, 2, 3];
+
+// function plusfive(n) {
+//     return n + 5;
+// }
+
+// console.log(map(arr, plusfive));
+
+var filter = function(arr,fn){
+    let filteredArr=[];
+    for(let i=0; i<arr.length;i++){
+        if(fn(arr[i],i)){
+            filteredArr.push(arr[i]);
         }
     }
-};
+    return filteredArr;
+}
+const arr = [0, 10, 20, 30];
 
-const count=createCounter(10)
-console.log(count.increment());
-console.log(count.decrement());
-console.log(count.decrement());
-console.log(count.decrement());
-console.log(count.reset());
-
-
-var map= function (arr,fn){
-  result =[];
-  for (i=0; i<arr.length;i++){
-    result.push(fn(arr[i],i));
-  }
-  return result;
+function greaterThan10(n) {
+    return n > 10;
 }
 
-const arr = [1, 2, 3];
-
-function plusfive(n) {
-    return n + 5;
-}
-
-console.log(map(arr, plusfive));
+console.log(filter(arr, greaterThan10));
