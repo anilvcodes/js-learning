@@ -123,19 +123,32 @@
 
 // console.log(map(arr, plusfive));
 
-var filter = function(arr,fn){
-    let filteredArr=[];
-    for(let i=0; i<arr.length;i++){
-        if(fn(arr[i],i)){
-            filteredArr.push(arr[i]);
-        }
-    }
-    return filteredArr;
-}
-const arr = [0, 10, 20, 30];
+// var filter = function(arr,fn){
+//     let filteredArr=[];
+//     for(let i=0; i<arr.length;i++){
+//         if(fn(arr[i],i)){
+//             filteredArr.push(arr[i]);
+//         }
+//     }
+//     return filteredArr;
+// }
+// const arr = [0, 10, 20, 30];
 
-function greaterThan10(n) {
-    return n > 10;
+// function greaterThan10(n) {
+//     return n > 10;
+// }
+
+// console.log(filter(arr, greaterThan10));
+
+//same using filter
+var filter=function(arr,fn){
+   return arr.filter(fn);
+
+}
+const arr = [0, 10, 20,50,60, 70, 30];
+
+function greaterThan50(n) {
+    return n > 50;
 }
 
-console.log(filter(arr, greaterThan10));
+console.log(filter(arr, greaterThan50));
