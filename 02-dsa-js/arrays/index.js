@@ -9,3 +9,11 @@ console.log(arr);
 arr.shift();
 arr.pop();
 console.log(arr);
+
+for(let i=0 ; i<arr.length;i++){
+    console.log(arr[i]);
+}
+let result = arr.map((value) => {
+    return value * 5;
+});
+console.log(result);
