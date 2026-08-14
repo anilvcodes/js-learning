@@ -25,12 +25,17 @@ console.log(sum);
 
 let arr3=[12,45,67,89,678];
 let max=arr3[0];
+let min=arr3[0];
 for (let i=0; i<arr3.length; i++){
     if(max<arr3[i]){
         max=arr3[i];
     }
+      if(min>arr3[i]){
+        min=arr3[i];
+    }
+    
 }
-
+console.log(min);
 
 console.log(max);
 
