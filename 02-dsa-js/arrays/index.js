@@ -23,7 +23,20 @@ for (let i = 0; i < arr2.length; i++) {
 
 console.log(sum);
 
-let result = arr.map((value) => {
+let arr3=[12,45,67,89,678];
+let max=arr3[0];
+for (let i=0; i<arr3.length; i++){
+    if(max<arr3[i]){
+        max=arr3[i];
+    }
+}
+
+
+console.log(max);
+
+
+
+let result = arr3.map((value) => {
     return value * 5;
 });
 console.log(result);
