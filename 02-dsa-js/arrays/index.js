@@ -44,7 +44,7 @@ console.log(max);
 let result = arr3.map((value) => {
     return value * 5;
 });
-console.log(result);
+console.log(result.reverse());
 
 
 
