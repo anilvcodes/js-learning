@@ -19,3 +19,17 @@ greet("anil ")
  }
  console.log(avg(25,25,25));
 
+ // age greater than 18 or not 
+
+ function ageGreater(age:number) :boolean
+ {
+    if(age>18){
+      return true;
+    }
+    else{
+        return false;
+    }
+ }
+ let age = ageGreater(7);
+ console.log(age);
+
