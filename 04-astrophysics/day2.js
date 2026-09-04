@@ -4,17 +4,17 @@
 //G = 6.67430e-11
 
 
-const G = 6.67430e-11;
+//const G = 6.67430e-11;
 
 // Masses in kilograms
-const m1 = 10;
-const m2 = 20;
+//const m1 = 10;
+//const m2 = 20;
 
 // Distance in meters
-const r = 2;
+//const r = 2;
 
 // Calculate gravitational force
-const F = G * (m1 * m2) / (r ** 2);
+//const F = G * (m1 * m2) / (r ** 2);
 
 console.log("Gravitational Force:", F, "N");
 function gravitionalForce(m1,m2,r){
